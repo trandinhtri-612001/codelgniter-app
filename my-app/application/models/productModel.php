@@ -18,7 +18,7 @@ class productModel extends CI_Model
     }
     public function getById($id){
         $this->db->where('id',$id);
-        $res = $res = $this->db->get('product');
+        $res = $this->db->get('product');
         return $res;
     }
     public function updateById($id,$data){
